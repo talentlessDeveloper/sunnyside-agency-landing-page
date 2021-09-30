@@ -61,8 +61,8 @@ Also can't seem to choose a either a mobile or desktop first approach.
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@talentlessDeveloper](https://www.frontendmentor.io/profile/talentlessDeveloper)
+- Twitter - [@yourusername](https://www.twitter.com/kcreeem)
 
 ## Acknowledgments
 
