@@ -51,7 +51,7 @@
         text-align: center;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: flex-end;
         padding: rem(30);
 
         @include breakpoint-desktop(medium) {

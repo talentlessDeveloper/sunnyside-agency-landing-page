@@ -263,6 +263,9 @@ h1 {
 .header__menu a:not(:last-child) {
   color: var(--dGrayishBlue);
 }
+.header__menu a:not(:last-child):hover {
+  color: var(--darkCyan);
+}
 .header__menu .button {
   background: var(--yellow);
 }
@@ -339,7 +342,7 @@ h1 {
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   padding: 1.875rem;
 }
 @media (min-width: 40em) {

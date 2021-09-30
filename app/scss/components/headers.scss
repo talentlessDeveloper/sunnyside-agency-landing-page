@@ -115,6 +115,9 @@
     a:not(:last-child) {
       color: var(--dGrayishBlue);
       // padding: rem(12);
+      &:hover {
+        color: var(--darkCyan);
+      }
     }
 
     .button {
