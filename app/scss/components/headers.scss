@@ -2,14 +2,14 @@
 
 .header {
   position: relative;
-  background: url(../../../images/mobile/image-header.jpg);
+  background: url(.././images/mobile/image-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 70%;
   height: 60vh;
   padding: rem(5) rem(14);
   @include breakpoint-desktop(medium) {
-    background: url(../../../images/desktop/image-header.jpg);
+    background: url(.././images/desktop/image-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 30%;
