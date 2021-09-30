@@ -1,0 +1,48 @@
+@use "../util/" as *;
+
+.footer {
+  background-color: hsla(168, 44%, 63%, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @include breakpoint-mobile(small) {
+    padding: 0 rem(15);
+  }
+  &__grid {
+    margin: rem(50) auto;
+  }
+
+  svg path {
+    fill: var(--dsCyan);
+    transition: all 300ms ease;
+    &:hover {
+      fill: var(--white);
+    }
+  }
+
+  &__links {
+    margin-top: rem(20);
+
+    a {
+      color: var(--darkCyan);
+      font-size: rem(17);
+      transition: all 300ms ease;
+      &:not(:last-child) {
+        margin-right: rem(30);
+      }
+      &:hover {
+        color: var(--white);
+      }
+    }
+  }
+
+  &__socials {
+    margin-top: rem(72);
+    margin-bottom: rem(50);
+    a:not(:last-child) {
+      margin-right: rem(30);
+    }
+  }
+}

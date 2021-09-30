@@ -1,0 +1,155 @@
+@use "../util/" as *;
+
+.header {
+  position: relative;
+  background: url(../../../images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 70%;
+  height: 60vh;
+  padding: rem(5) rem(14);
+  @include breakpoint-desktop(medium) {
+    background: url(../../../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    height: 65vh;
+  }
+
+  @include breakpoint-desktop(large) {
+    height: 100vh;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all 300ms ease;
+
+    @include breakpoint-mobile(small) {
+      padding-bottom: rem(15);
+      margin-bottom: rem(30);
+    }
+
+    // @include breakpoint-desktop(medium) {
+    //   margin-bottom: rem(50);
+    // }
+
+    @include breakpoint-desktop(large) {
+      margin-bottom: rem(20);
+    }
+
+    &.open {
+      .header__toggle {
+        svg path {
+          fill: var(--grayishBlue);
+        }
+      }
+    }
+  }
+
+  &__logo {
+    @include breakpoint-desktop(large) {
+      img {
+        width: rem(150);
+        height: rem(32);
+      }
+    }
+  }
+
+  &__links {
+    a {
+      font-weight: 600;
+      letter-spacing: 2px;
+      transition: all 300ms ease;
+      &:not(:last-child) {
+        margin-right: rem(20);
+        &:hover {
+          color: var(--darkBlue);
+        }
+      }
+    }
+  }
+
+  &__button {
+  }
+
+  &__toggle {
+    cursor: pointer;
+  }
+
+  &__menu {
+    position: absolute;
+    top: rem(96);
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: calc(100% - 3rem);
+    height: rem(250);
+    padding: rem(20) rem(23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--white);
+    z-index: 1;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: rem(-26);
+      right: 0;
+      width: 0;
+      height: 0;
+      border-bottom: solid 40px var(--white);
+      border-left: solid 40px transparent;
+    }
+
+    &.desktop-hide {
+      @include breakpoint-desktop(medium) {
+        display: none;
+      }
+    }
+
+    a:not(:last-child) {
+      color: var(--dGrayishBlue);
+      // padding: rem(12);
+    }
+
+    .button {
+      background: var(--yellow);
+    }
+  }
+
+  &__center {
+    @include breakpoint-mobile(medium) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @include breakpoint-desktop(medium) {
+      width: 100%;
+    }
+    text-align: center;
+  }
+
+  &__title {
+    font-family: "Fraunces", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: rem(4);
+    color: var(--white);
+    @include breakpoint-desktop(large) {
+      margin: rem(43) 0px rem(75) 0px;
+    }
+  }
+
+  &__arrow {
+    @include breakpoint-mobile(small) {
+      height: rem(60);
+    }
+  }
+}

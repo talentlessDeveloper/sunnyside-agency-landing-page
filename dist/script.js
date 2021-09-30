@@ -1,0 +1,2 @@
+"use strict";console.log("Hello");var menuBtn=document.getElementById("btnHamburger"),nav=document.querySelector("nav"),menu=document.querySelector(".header__menu");menuBtn.addEventListener("click",(function(){nav.classList.contains("open")?(nav.classList.remove("open"),menu.classList.add("hide"),menu.classList.remove("fade-in"),menu.classList.add("fade-out")):(nav.classList.add("open"),menu.classList.remove("hide"),menu.classList.remove("fade-out"),menu.classList.add("fade-in"))}));
+//# sourceMappingURL=script.js.map

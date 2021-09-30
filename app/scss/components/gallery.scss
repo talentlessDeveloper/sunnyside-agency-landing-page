@@ -1,0 +1,17 @@
+@use "../util/" as *;
+.gallery {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include breakpoint-desktop(medium) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}

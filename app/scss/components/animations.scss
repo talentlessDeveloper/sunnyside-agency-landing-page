@@ -1,0 +1,75 @@
+.hide {
+  visibility: hidden;
+}
+
+.fade-in {
+  animation: fadeIn 500ms ease-in-out forwards;
+}
+
+// .arrow-fade {
+//   animation: arrow 2000ms ease-in-out infinite;
+// }
+
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 500ms ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    height: 2px;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+    height: 50px;
+  }
+
+  75% {
+    height: 80px;
+  }
+
+  90% {
+    height: 100px;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    height: 114px;
+  }
+}
